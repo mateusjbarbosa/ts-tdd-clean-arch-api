@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Mateus José Barbosa <mateus@findme.id>",
+  "author": "Mateus José Barbosa <dev.mateusbarbosa@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "git-commit-msg-linter": "^3.2.6"
+  "devDependencies": {
+    "@types/node": "^16.4.12",
+    "git-commit-msg-linter": "^3.2.6",
+    "typescript": "^4.3.5"
   }
 }

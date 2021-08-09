@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests -—no-cache --watch",
-    "test:staged": "jest --passWithNoTests -—no-cache"
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:ci": "yarn test -- --coverage",
+    "test:integration": "yarn test -- -c jest.integration.config.js --watch",
+    "test:staged": "yarn test -- --findRelatedTests",
+    "test:unit": "yarn test -- -c jest.unit.config.js --watch",
+    "test:verbose": "jest --passWithNoTests --runInBand"
   },
   "keywords": [],
   "author": "Mateus José Barbosa <dev.mateusbarbosa@gmail.com>",

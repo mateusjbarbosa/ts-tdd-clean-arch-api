@@ -1,5 +1,8 @@
 # Build
 dist/
 
+# Jest
+coverage/
+
 # Node.js
 node_modules/

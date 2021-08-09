@@ -14,9 +14,13 @@
   "keywords": [],
   "author": "Mateus José Barbosa <dev.mateusbarbosa@gmail.com>",
   "license": "ISC",
+  "dependencies": {
+    "validator": "^13.6.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.12",
+    "@types/validator": "^13.6.3",
     "@typescript-eslint/eslint-plugin": "4",
     "eslint": "7",
     "eslint-config-standard-with-typescript": "^20.0.0",

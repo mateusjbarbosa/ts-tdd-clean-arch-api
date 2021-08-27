@@ -26,6 +26,7 @@ const makeSut = (): SutTypes => {
 describe('Bcrypt Adapter', () => {
   test('should call bcrypt with correct values', async () => {
     const { sut, salt } = makeSut()
+
     const hashSpy = jest.spyOn(bcrypt, 'hash')
 
     await sut.encrypt('any_value')
@@ -38,5 +39,19 @@ describe('Bcrypt Adapter', () => {
     const hash = await sut.encrypt('any_value')
 
     expect(hash).toBe('hashed_value')
+  })
+
+  test('should throw if bcrypt throws', async () => {
+    const { sut } = makeSut()
+
+    jest.spyOn(bcrypt, 'hash').mockImplementationOnce(
+      () => {
+        throw new Error()
+      }
+    )
+
+    const promise = sut.encrypt('any_value')
+
+    await expect(promise).rejects.toThrow()
   })
 })

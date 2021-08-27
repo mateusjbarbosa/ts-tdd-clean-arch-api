@@ -19,9 +19,11 @@
   "author": "Mateus José Barbosa <dev.mateusbarbosa@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.6.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.12",
     "@types/validator": "^13.6.3",

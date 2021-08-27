@@ -20,14 +20,14 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "mongodb": "^4.1.1",
+    "mongodb": "^3.6.3",
     "validator": "^13.6.0"
   },
   "devDependencies": {
-    "@shelf/jest-mongodb": "^2.0.3",
+    "@shelf/jest-mongodb": "^1.2.1",
     "@types/bcrypt": "^5.0.0",
     "@types/jest": "^26.0.24",
-    "@types/mongodb": "^4.0.7",
+    "@types/mongodb": "^3.5.34",
     "@types/node": "^16.4.12",
     "@types/validator": "^13.6.3",
     "@typescript-eslint/eslint-plugin": "4",

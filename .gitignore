@@ -3,6 +3,7 @@ dist/
 
 # Jest
 coverage/
+globalConfig.json
 
 # Node.js
 node_modules/
